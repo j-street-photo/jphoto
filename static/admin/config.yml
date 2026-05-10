@@ -2,7 +2,7 @@ backend:
   name: github
   repo: j-street-photo/jphoto
   branch: main
-  base_url: https://sveltia-cms-auth.pages.dev
+  base_url: https://jphoto-auth.workers.dev
   auth_endpoint: /auth
 
 media_folder: "static/images"
