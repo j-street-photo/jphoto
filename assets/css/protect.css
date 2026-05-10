@@ -1,0 +1,13 @@
+/* Image protection - disable right-click save and drag */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Re-enable pointer events on links containing images so lightbox still works */
+a img {
+  pointer-events: auto;
+}

@@ -1,0 +1,15 @@
+baseURL = "https://jphoto.pages.dev"
+languageCode = "en-us"
+title = "jphoto"
+theme = "hugo-theme-gallery"
+
+[params]
+  # Site description (appears in meta tags)
+  description = "Photography"
+  # Show image count per gallery on homepage
+  imageCount = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

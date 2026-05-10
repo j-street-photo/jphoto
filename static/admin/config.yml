@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/jphoto
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+# Each gallery is a folder under content/photos/
+# Adding a photo to a new folder name auto-creates that gallery
+collections:
+  - name: "galleries"
+    label: "Galleries"
+    label_singular: "Photo"
+    folder: "content/photos"
+    path: "{{slug}}/_index"
+    media_folder: "/static/images/{{slug}}"
+    public_folder: "/images/{{slug}}"
+    create: true
+    nested:
+      depth: 1
+    fields:
+      - label: "Gallery Name"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+      - label: "Description"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Optional text shown at the top of this gallery"
+
+  - name: "photos"
+    label: "Photos"
+    label_singular: "Photo"
+    folder: "content/photos"
+    path: "{{dirname}}/{{slug}}"
+    create: true
+    nested:
+      depth: 2
+    fields:
+      - label: "Gallery"
+        name: "gallery"
+        widget: "string"
+        hint: "Must match an existing gallery folder name exactly (e.g. uncategorised, street-2024)"
+      - label: "Photo"
+        name: "image"
+        widget: "image"
+      - label: "Caption"
+        name: "title"
+        widget: "string"
+        required: false
+        hint: "Optional caption shown in the lightbox"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
