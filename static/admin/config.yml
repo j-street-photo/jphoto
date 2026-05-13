@@ -9,16 +9,11 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-  - name: "galleries"
+- name: "galleries"
     label: "Galleries"
     label_singular: "Gallery"
     folder: "content/photos"
-    path: "{{slug}}/_index"
-    media_folder: "/static/images/{{slug}}"
-    public_folder: "/images/{{slug}}"
     create: true
-    nested:
-      depth: 1
     fields:
       - label: "Gallery Name"
         name: "title"
