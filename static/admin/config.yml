@@ -9,24 +9,24 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-- name: "galleries"
-    label: "Galleries"
-    label_singular: "Gallery"
-    folder: "content/photos"
-    create: true
-    fields:
-      - label: "Gallery Name"
-        name: "title"
-        widget: "string"
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-      - label: "Description"
-        name: "body"
-        widget: "markdown"
-        required: false
-        hint: "Optional text shown at the top of this gallery"
+    - name: "galleries"
+        label: "Galleries"
+        label_singular: "Gallery"
+        folder: "content/photos"
+        create: true
+        fields:
+          - label: "Gallery Name"
+            name: "title"
+            widget: "string"
+          - label: "Date"
+            name: "date"
+            widget: "datetime"
+            default: ""
+          - label: "Description"
+            name: "body"
+            widget: "markdown"
+            required: false
+            hint: "Optional text shown at the top of this gallery"
 
   - name: "photos"
     label: "Photos"
