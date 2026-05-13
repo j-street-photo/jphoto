@@ -5,45 +5,21 @@ backend:
   base_url: https://jphoto-auth.jeremy06.workers.dev
   auth_endpoint: /auth
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "content/photos/uncategorised"
+public_folder: "/photos/uncategorised"
 
 collections:
-  - name: "galleries"
-    label: "Galleries"
-    label_singular: "Gallery"
-    folder: "content/photos"
-    create: true
-    fields:
-      - label: "Gallery Name"
-        name: "title"
-        widget: "string"
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-      - label: "Description"
-        name: "body"
-        widget: "markdown"
-        required: false
-        hint: "Optional text shown at the top of this gallery"
-
-  - name: "photos"
-    label: "Photos"
+  - name: "uncategorised"
+    label: "Uncategorised"
     label_singular: "Photo"
-    folder: "content/photos"
-    path: "{{dirname}}/{{slug}}"
+    folder: "content/photos/uncategorised"
     create: true
-    nested:
-      depth: 2
     fields:
-      - label: "Gallery"
-        name: "gallery"
-        widget: "string"
-        hint: "Must match an existing gallery folder name exactly (e.g. uncategorised, street-2024)"
       - label: "Photo"
         name: "image"
         widget: "image"
+        media_folder: "/content/photos/uncategorised"
+        public_folder: ""
       - label: "Caption"
         name: "title"
         widget: "string"
