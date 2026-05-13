@@ -8,12 +8,10 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
-# Each gallery is a folder under content/photos/
-# Adding a photo to a new folder name auto-creates that gallery
 collections:
   - name: "galleries"
     label: "Galleries"
-    label_singular: "Photo"
+    label_singular: "Gallery"
     folder: "content/photos"
     path: "{{slug}}/_index"
     media_folder: "/static/images/{{slug}}"
