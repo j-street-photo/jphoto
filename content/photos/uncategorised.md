@@ -1,4 +1,0 @@
----
-title: Uncategorised
-date: 2026-05-13T21:25:00
----
