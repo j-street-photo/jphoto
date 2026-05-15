@@ -1,9 +1,10 @@
-.gallery figure {
+.card figure {
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  margin: 0;
 }
 
-.gallery figure img {
+.card figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
