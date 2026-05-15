@@ -1,4 +1,10 @@
-.gallery-grid article figure img {
+.gallery figure {
   aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.gallery figure img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
