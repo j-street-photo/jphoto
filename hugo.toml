@@ -1,4 +1,4 @@
-baseURL = "https://jphoto.pages.dev"
+baseURL = "https://jphoto.me"
 languageCode = "en-us"
 title = "jphoto"
 theme = "hugo-theme-gallery"
