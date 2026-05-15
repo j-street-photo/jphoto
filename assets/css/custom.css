@@ -1,3 +1,7 @@
+.card {
+  border-radius: 0;
+}
+
 .card figure {
   aspect-ratio: 1 / 1;
   overflow: hidden;
