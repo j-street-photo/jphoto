@@ -1,0 +1,23 @@
+To add photos:
+
+Go to github.com → jphoto → content/uncategorised/ (or whichever gallery folder)
+Add file → Upload files
+Drag in your jpg files
+Commit
+
+To create a new gallery:
+
+Go to github.com → jphoto → content/
+Add file → Create new file
+Type new-gallery-name/index.md as the filename
+Paste:
+
+---
+title: "Your Gallery Title"
+date: 2024-01-01
+---
+
+Commit
+Then upload photos into that new folder
+
+Site rebuilds automatically each time, live in ~60 seconds.
