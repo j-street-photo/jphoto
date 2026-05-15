@@ -1,6 +1,6 @@
 baseURL = "https://jphoto.me"
 languageCode = "en-us"
-title = "jphoto"
+title = "jphoto.me"
 theme = "hugo-theme-gallery"
 
 [params]
